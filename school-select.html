@@ -1,0 +1,12 @@
+<div class="schoolSelect">
+	<ul class="citylist">
+		<li ng-repeat="item in datas" ng-class = "{current: item.city === currentCity}" ng-click= "changeCurrentCity(item.city, $index)">
+			{{item.city}}
+		</li>
+	</ul>
+	<ul class="schoollist">
+		<li ng-repeat = "item in datas[currentIndex].schools track by $index" ng-click="selectSchool(item)">
+			{{item}}
+		</li>
+	</ul>
+</div>

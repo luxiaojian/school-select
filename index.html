@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "app">
+<head>
+	<meta charset="UTF-8">
+	<title>学校下拉选择</title>
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<script src="./dist/vendor.js"></script>
+	<script src="./dist/index.js"></script>
+</head>
+<body>
+	<div class="container" style="margin-top: 16px;" ng-controller = "mainCtrl">
+		<div class="row">
+			<div class="form-group clearfix">
+				<label for="" class="control-label col-md-2 text-center">选择学校</label>
+				<div class="col-md-4">
+					<input type="text" class="form-control" ng-model="school" schoolSelect>
+				</div>
+			</div>
+			<p>已经选择的学校是:{{school}}</p>
+		</div>
+	</div>
+</body>
+</html>

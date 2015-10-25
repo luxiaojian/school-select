@@ -1,0 +1,53 @@
+ul,
+li {
+	list-style: none;
+}
+ul {
+	padding-left: 0px;
+}
+.schoolSelect {
+	position: absolute;
+	width: 400px;
+	height: 300px;
+	z-index: 999;
+	background-color: #eee;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.3),-1px -1px 1px rgba(0,0,0,.3);
+}
+
+.citylist {
+	float: left;
+	width: 80px;
+	height: 300px;
+	overflow: auto;
+	border-top: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+
+.citylist li {
+	background-color: #f7f7f7;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+.citylist li.current {
+	background-color: #3199e8;
+	color: #fff;
+}
+
+.schoollist {
+	height: 300px;
+	overflow: auto;
+	background-color: #fff;
+	border-top: 1px solid #ddd;
+}
+
+.schoollist li {
+	text-align: center;
+}
+
+.schoollist li:hover {
+	background-color: #3199e8;
+	color: #fff;
+}
